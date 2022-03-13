@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //opening a connection to the blogDB database and running an instance of mongoose
-mongoose.connect("mongodb+srv://admin-viktorb:Test123@cluster0.ln2np.mongodb.net/blogDB", {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://admin-viktorb:Test123@cluster0.ln2np.mongodb.net/blogDB", {useNewUrlParser: true, useUnifiedTopology: true});
 
 //In mongoose everything is derived from a schema: 
 const postSchema = {
